@@ -2,8 +2,11 @@ package th.in.androidthai.calculatekasidet;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+import th.in.androidthai.calculatekasidet.MainFrag.MainFragment;
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,4 +22,9 @@ public class MainActivity extends AppCompatActivity {
 
 
     }   //main class
+
+    @Override
+    public void onClick(View view) {
+
+    }
 }   // main class

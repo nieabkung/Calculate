@@ -6,11 +6,25 @@
     android:layout_height="match_parent"
     tools:context="th.in.androidthai.calculatekasidet.MainActivity">
 
+    // wallpaper
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ImageView>
+
+
     //== content of fragment
     <FrameLayout
         android:id="@+id/ContentMainFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></FrameLayout>
+        android:layout_height="match_parent">
+
+
+    </FrameLayout>
+
 
 </android.support.constraint.ConstraintLayout>
 

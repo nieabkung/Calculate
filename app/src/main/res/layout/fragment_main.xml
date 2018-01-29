@@ -1,12 +1,50 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="th.in.androidthai.calculatekasidet.MainFragment">
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
+    // toolbar
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbarMain"
         android:layout_width="match_parent"
         android:layout_height="match_parent"></android.support.v7.widget.Toolbar>
 
-</FrameLayout>
+    // content
+    <LinearLayout
+        android:background="#b8000000"
+        android:padding="10dp"
+        android:layout_margin="50dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        //showtext
+        <TextView
+            android:id="@+id/txtShowName"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:text="Click Show Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        // ShowName button
+        <Button
+            android:id="@+id/btnShowName"
+            android:text="Show Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        //  calculate button
+        <Button
+            android:id="@+id/btnCalCuLate"
+            android:text="Calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
